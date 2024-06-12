@@ -32,7 +32,8 @@ ds = DS1302(Pin(18),Pin(17),Pin(16))
 
 ds.date_time() # returns the current datetime.
 
-#ds.date_time([2023, 3, 2, 0, 8, 17, 50, 0]) # set datetime.
+# set YYYY, MM, DD, Week day (1-7), Hr, Min, Sec
+#ds.date_time([2023, 3, 2, 1, 8, 17, 50]) # set datetime.
 
 #ds.hour() # returns hour.
 #print(ds.date_time())
